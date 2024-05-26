@@ -1,0 +1,31 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-account",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16811991571a4d76b1": {
+      "type": "apps",
+      "blocks": {
+        "89b1fa45-fd2b-4390-bfc4-c027507415cc": {
+          "type": "shopify:\/\/apps\/go-sub-dev-public-007\/blocks\/gosub-account-block\/6ba5cbdc-fe49-4c2b-8ba0-3a8228dd3900",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "89b1fa45-fd2b-4390-bfc4-c027507415cc"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16811991571a4d76b1"
+  ]
+}
