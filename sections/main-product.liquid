@@ -34,6 +34,13 @@
     <script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>
   {%- endif -%}
 
+  hello World !!
+  {% for selling_plan in product.selling_plan_groups %}
+    {% if selling_plan.app_id contains 'gosub-selling-plan-group' or selling_plan.app_id == nil %}
+    <br>plan: {{ selling_plan.name }} / {{ selling_plan.app_id }}
+    {% endif %}
+  {%  endfor  %}
+
   {%- assign first_3d_model = product.media | where: 'media_type', 'model' | first -%}
   {%- if first_3d_model -%}
     {{ 'component-product-model.css' | asset_url | stylesheet_tag }}
