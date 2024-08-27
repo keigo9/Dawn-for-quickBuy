@@ -40,6 +40,7 @@ if (!customElements.get('quick-add-modal')) {
             this.updateImageSizes();
             this.preventVariantURLSwitching();
             super.show(opener);
+            window.GORIDE.GoSubWidget.init();
           })
           .finally(() => {
             opener.removeAttribute('aria-disabled');
